@@ -1,8 +1,11 @@
 .table{
-    width: 380px !important;
+    width: 370px !important;
+}
+.title {
+    width: 360px
 }
 form{
-    width: 300px;
+    width: 370px;
 }
 h1{
     color: #e86661 !important;
