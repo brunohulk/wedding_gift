@@ -9,10 +9,10 @@ h1{
     font-family: 'Great Vibes', cursive !important;
 }
 h2 {
-    color: # !important;
+    color: #e86661 !important;
 }
 th, #btnCalc{
-    background-color: #e86661
+    background-color: #e86661;
     font-weight: bold;
     color: white;
 }
