@@ -28,7 +28,7 @@ require_once "rate.php";
                 </tr>
                 <tr>
                     <td>20,00 €</td>
-                    <td>R$ <?php echo number_format(10 * $euroRate, 2);?></td>
+                    <td>R$ <?php echo number_format(20 * $euroRate, 2);?></td>
                 </tr>
                 <tr>
                     <td>50,00 € </td>
@@ -69,7 +69,7 @@ require_once "rate.php";
 <script>
     $(function() {
         $("#btnCalc").click(function() {
-            number = $("#reais").val() * $("#euro_tax").val();
+            number = $("#reais").val() / $("#euro_tax").val();
             number = number.toLocaleString('de-DE', { style: 'currency', currency: 'EUR', maximumFractionDigits: 2});
             $("#euroResult").val(number);
         });
