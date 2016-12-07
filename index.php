@@ -28,7 +28,7 @@ require_once "rate.php";
                 </tr>
                 <tr>
                     <td>20,00 €</td>
-                    <td>R$ <?php echo number_format(10 * $euroRate, 2);?></td>
+                    <td>R$ <?php echo number_format(20 * $euroRate, 2);?></td>
                 </tr>
                 <tr>
                     <td>50,00 € </td>
@@ -59,17 +59,22 @@ require_once "rate.php";
                     <label for="exampleInputName2">Euros</label>
                     <input type="text" readonly class="form-control" id="euroResult" placeholder="00.00">
                 </div>
-                <button type="button" id="btnCalc" class="btn btn-default">Calcular</button>
+                <button type="button" id="btnCalc" class="btn btn-default">Calcular</button><br>
+                <div class="pull-right well well-sm">
+                    1 euro = R$<?php echo number_format($euroRate, 2);?>*
+                </div>
             </form>
         </div>
+
     </div>
+
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="https://use.fontawesome.com/2c5e9f06d0.js"></script>
 <script>
     $(function() {
         $("#btnCalc").click(function() {
-            number = $("#reais").val() * $("#euro_tax").val();
+            number = $("#reais").val() / $("#euro_tax").val();
             number = number.toLocaleString('de-DE', { style: 'currency', currency: 'EUR', maximumFractionDigits: 2});
             $("#euroResult").val(number);
         });
