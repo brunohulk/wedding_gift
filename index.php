@@ -15,7 +15,7 @@ require_once "rate.php";
             <h1>
                 <i class="fa fa-plane" aria-hidden="true"></i><i class="fa fa-gift" aria-hidden="true"></i>
                 Bruno & Andréia
-                <i class="fa fa-plane" aria-hidden="true"></i><i class="fa fa-gift" aria-hidden="true"></i>
+                <i class="fa fa-gift" aria-hidden="true"></i><i class="fa fa-plane" aria-hidden="true"></i>
             </h1>
             <table class="table table-striped table-bordered">
                 <tr>
